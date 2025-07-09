@@ -2,6 +2,7 @@
 
 def timer(func):
     def wrapper(*args, **kwargs):
+        print(func)
         print("before")
         res = func(*args, **kwargs)
         print(res)
